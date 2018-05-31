@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Андрей Шевцов](https://up.htmlacademy.ru/htmlcss/21/user/792379).
-* Наставник: `Дмитрий Варганов`.
+* Наставник: [Дмитрий Варганов](https://htmlacademy.ru/profile/varganov_d).
 
 ---
 
