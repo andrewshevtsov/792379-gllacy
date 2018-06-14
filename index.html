@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="body-container">
     <header class="main-header">
     	<nav class="main-nav">
-	    	<img class="main-header-logo" width="154" heght="64" alt="Логотип интернет-магазина мороженного &laquo;Gllacy Shop&raquo;">
+	    	<img class="main-header-logo" src="img/svg/logo-big.svg" width="154" heght="64" alt="Логотип интернет-магазина мороженного &laquo;Gllacy Shop&raquo;">
 	    	<ul class="main-navigation-list">
 	    		<li class="main-navigation-item">
 	    			<a class="main-navigation-link" href="#">Каталог</a>
@@ -19,17 +21,17 @@
 	    			<a class="main-navigation-link" href="#">О компании</a>
 	    		</li>
 	    	</ul>
-			<ul class="user-navigation">
-				<li class="user-navigation-item">
+			<ul class="main-navigation">
+				<li class="main-navigation-item">
 					<!-- Здесь будет форма для ввода текста -->
-					<a class="user-search">Поиск</a>
+					<a class="main-navigation-link user-search">Поиск</a>
 				</li>
-				<li class="user-navigation-item">
+				<li class="main-navigation-item">
 					<!-- Здесь будет форма авторизации -->
-					<a class="user-login" href="#">Вход</a>
+					<a class="main-navigation-link user-login" href="#">Вход</a>
 				</li>
-				<li class="user-navigation-item">
-					<a class="user-basket" href="#">Пусто</a>
+				<li class="main-navigation-item">
+					<a class="main-navigation-link user-basket" href="#">Пусто</a>
 				</li>
 			</ul>
 			<p class="header-contacts">
@@ -42,12 +44,11 @@
     	<h1 class="visually-hidden">Интернет-магазин мороженного &laquo;Gllacy Shop&raquo;</h1>
 		<section class="main-present">
 			<figure class="main-slider">
-			<img class="slider-background" alt="Фото крем-брюле и пломбира с малиновым джемом" width="500" height="500">
-			<!-- Здесь будет слайдер -->
-			<h2 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h2>			
-			<p class="slider-btn">				
-					<a class="slider-btn-link" href="#">Давайте оба!</a>				
-			</p>
+				<img class="slider-background" alt="Фото крем-брюле и пломбира с малиновым джемом" width="500" height="500">
+				<!-- Здесь будет слайдер -->
+				<h2 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h2>
+				<a class="slider-btn-link" href="#">Давайте оба!
+				</a>
 			</figure>
 		</section>
 		<section class="promo-block">
@@ -57,39 +58,39 @@
 					<p class="raspberries-description">
 						При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.
 					</p>
-					<a class="raspberries-get-btn" href="#">Хочу варенье!</a>
+					<a class="get-btn raspberries-get-btn" href="#">Хочу варенье!</a>
 				</li>
 				<li class="promo-list-item chokolate-bg">
 					<h3 class="third-title">Шоколадки даром!</h3>
 					<p class="chokolate-description">
 						При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно
 					</p>
-					<a class="chokolate-get-btn" href="#">Хочу шоколадки!</a>
+					<a class="get-btn chokolate-get-btn" href="#">Хочу шоколадки!</a>
 				</li>
 			</ul>
 		</section>
 		<section class="catalog-block">
 			<ul class="catalog-list">
 				<li class="catalog-item">
-					<img class="catalog-item-img" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="265" height="265">
+					<img class="catalog-item-img" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="265" height="265" src="img/jpeg/ice-orange.jpg">
 					<!-- Здесь будет вставлен круг ХИТ с помощью псевдоэлемента -->
 					<p class="catalog-item-sum">310 &#8381;/<span class="ice-weight">кг</span></p>					
 					<a class="catalog-item-link" href="#"><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
 				</li>
 				<li class="catalog-item">
-					<img class="catalog-item-img" alt="Сливочно-кофейное с кусочками шоколада" width="265" height="265">
+					<img class="catalog-item-img" alt="Сливочно-кофейное с кусочками шоколада" width="265" height="265" src="img/jpeg/ice-choco.jpg">
 					<!-- Здесь будет вставлен круг ХИТ с помощью псевдоэлемента -->
 					<p class="catalog-item-sum">380 &#8381;/<span class="ice-weight">кг</span></p>					
 					<a class="catalog-item-link" href="#"><h3>Сливочно-кофейное с кусочками шоколада</h3></a>
 				</li>
 				<li class="catalog-item">
-					<img class="catalog-item-img" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="265" height="265">
+					<img class="catalog-item-img" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="265" height="265" src="img/jpeg/ice-strawberry.jpg">
 					<!-- Здесь будет вставлен круг ХИТ с помощью псевдоэлемента -->
 					<p class="catalog-item-sum">355 &#8381;/<span class="ice-weight">кг</span></p>					
 					<a class="catalog-item-link" href="#"><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></a>
 				</li>
 				<li class="catalog-item">
-					<img class="catalog-item-img" alt="Сливочное крем-брюле с карамельной подливкой" width="265" height="265">
+					<img class="catalog-item-img" alt="Сливочное крем-брюле с карамельной подливкой" width="265" height="265" src="img/jpeg/ice-caramel.jpg">
 					<!-- Здесь будет вставлен круг ХИТ с помощью псевдоэлемента -->
 					<p class="catalog-item-sum">415 &#8381;/<span class="ice-weight">кг</span></p>					
 					<a class="catalog-item-link" href="#"><h3>Сливочное крем-брюле с карамельной подливкой</h3></a>
@@ -115,9 +116,9 @@
 			</ul>
 		</section>
 		<section class="blog-container">
-			<div class="subscription-block">
-				<p class="blog-rubric">Новое в нашем блоге</p>
-				<p class="rubric-title">
+			<div class="subscription-block-rubric">
+				<p class="rubric-title">Новое в нашем блоге</p>
+				<p class="rubric-text">
 					<a class="rubric-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
 				</p>
 				<!-- Здесь будет фоновое изображение статьи -->
@@ -127,8 +128,12 @@
 					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
 					Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
 				</p>
-				<input type="email" placeholder="Электронная почта">
-				<button type="submit">Отправить</button>
+				<form class="subscribe-mailing">
+					<label for="email"></label>
+					<input type="email" id="email" placeholder="Электронная почта">
+					<label for="sent"></label>
+					<button type="submit" id="sent">Отправить</button>
+				</form>
 			</div>
 		</section>
 		<section class="contacts-block">
@@ -136,27 +141,27 @@
 				<!-- Здесь будет карта -->
 			</div>
 			<div class="address-container">
-				<p>Адрес главного офиса и офлайн-магазина:</p>
-				<p><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
-				<p>Для заказов по телефону:</p>
-				<b>8 812 450-25-25</b>
-				<p>(с 10 до 20 ежедневно)</p>
+				<p class="address-normal">Адрес главного офиса и офлайн-магазина:</p>
+				<p class="address-bold"><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+				<p class="address-normal">Для заказов по телефону:</p>
+				<span class="address-bold">8 812 450-25-25</span>
+				<p class="address-normal">(с 10 до 20 ежедневно)</p>
 				<a class="callback-btn" href="#">Форма обратной связи</a>
 			</div>
 		</section>
 		<footer class="main-footer">
 			<ul class="social-list">
 				<li class="social-item">
-					<a class="social-btn social-btn-twitter">Twitter</a>
+					<a class="social-btn social-btn-twitter"></a>
 				</li>
 				<li class="social-item">
-					<a class="social-btn social-btn-instagram">Instagram</a>
+					<a class="social-btn social-btn-instagram"></a>
 				</li>
 				<li class="social-item">
-					<a class="social-btn social-btn-facebook">Facebook</a>
+					<a class="social-btn social-btn-facebook"></a>
 				</li>
 				<li class="social-item">
-					<a class="social-btn social-btn-vkontakte">VK</a>
+					<a class="social-btn social-btn-vkontakte"></a>
 				</li>
 			</ul>
 			<ul class="footer-subnavigation">
