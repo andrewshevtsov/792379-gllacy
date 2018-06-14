@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #849d8f;
+	font-family: "roboto", sans-serif;
+	line-height: 22px;
+	color: #fff;
+}
+
+.header-left-navigation-list,
+.header-right-navigation-list,
+.catalog-item,
+.breadcrumbs-item,
+.pagination-item {
+	list-style-type: none;
+}
+
+.header-left-navigation-link,
+.main-navigation-link,
+.page-number {
+	text-decoration: none;
+	border-bottom: 1px solid rgba(157, 177, 165);
+	font-weight: bold;
+	color: #fff;
+}
+
+.header-right-navigation-item {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.header-right-navigation-link {
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	padding: 10px;
+}
+
+.user-search {
+	background-color: rgba(255, 255, 255, .2);
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.user-search::before {
+	content: url(../img/svg/icon-lens.svg);
+	position: relative;
+}
+
+.user-login {
+	background-color: rgba(255, 255, 255, .2);
+	width: 92px;
+	height: 32px;
+	border-radius: 25px;
+	text-align: center;
+}
+
+.user-login::before {
+	content: url(../img/svg/icon-login.svg);
+	position: absolute;
+	left: 15px;
+}
+
+.user-basket {
+	background-color: rgba(255, 255, 255, .2);
+	width: 100px;
+	height: 32px;
+	border-radius: 25px;
+	text-align: center;
+}
+
+.user-basket::before {
+	content: url(../img/svg/icon-basket.svg);
+	position: absolute;
+	left: 15px;
+}
+
+.slider-btn-link {
+	text-decoration: none;
+	color: #fff;
+	background-image:
+		linear-gradient(to top, #e74a35, #f26843);
+	font-weight: bold;
+	font-size: 32px;
+	padding: 20px 40px;
+	border-radius: 40px;
+}
+
+.get-btn {
+	font-size: 24px;
+	font-weight: normal;
+	background-image:
+		linear-gradient(to top, #e74a35, #f26843);
+	padding: 10px 20px;
+	border-radius: 25px;
+}
+
+.promo-list-item {
+	width: 560px;
+	height: 230px;
+	list-style-type: none;
+	border-radius: 25px;
+}
+
+.raspberries-bg {
+	background-image: url(../img/jpeg/raspberry-bg.jpg);
+}
+
+.chokolate-bg {
+	background-image: url(../img/jpeg/chokolate-bg.jpg);
+}
+
+.get-btn {
+	text-decoration: none;
+	color: #fff;
+}
+
+.third-title {
+	padding-top: 15px;
+	padding-left: 15px;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.catalog-item::before {
+	content: url(../img/svg/icon-circle-hit.svg);
+	position: absolute;
+	left: -5px;
+}
+
+.catalog-item-img {
+	border-radius: 50%;
+}
+
+.catalog-item-link {
+	color: #fff;
+}
+
+.about-info {
+	width: 1147px;
+	height: 305px;
+	border-radius: 15px;
+	background-image: url(../img/jpeg/waffle-pattern.jpg);
+	color: #323232;
+}
+
+.subscription-block-rubric {
+	width: 560px;
+	height: 220px;
+	background-image: url(../img/jpeg/strawberry-bg.jpg);
+	background-repeat: no-repeat;
+	border-radius: 15px;
+}
+
+.rubric-title {
+	color: #323232;
+	font-weight: 600;
+}
+
+.rubric-text {
+	width: 300px;
+}
+
+.rubric-link {
+	font-weight: bold;
+	font-size: 24px;
+	color: #323232;
+}
+
+.subscription-block {
+	width: 560px;
+	height: 220px;
+	color: #5a5a5a;
+	border-radius: 15px;
+	background-image: repeating-linear-gradient(-45deg,
+		#f8f7f4,
+		#f8f7f4 10px, 
+		#92cdff 10px, 
+		#92cdff 20px,
+		#f8f7f4 20px,
+		#f8f7f4 30px,
+		#fe9e90 30px, 
+		#fe9e90 40px);
+}
+
+.subscribe-info {
+	width: 550px;
+	height: 210px;
+	background-color: #f8f7f4;
+	border-radius: 15px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+
+.subscribe-mailing {
+	position: relative;
+	top: -70px;
+	left: 20px;
+}
+
+.address-container {
+	width: 300px;
+	height: 305px;
+	color: #323232;
+	background-color: #ffffff;
+	border-radius: 15px;
+}
+
+.address-bold {
+	font-weight: bold;
+}
+
+.callback-btn {
+	text-decoration: none;
+	color: #fff;
+	background-image: linear-gradient(to top, #e74a35, #f26843);
+	padding: 10px 25px;
+	border-radius: 20px;
+}
+
+.social-list, .footer-subnavigation {
+	list-style-type: none;
+}
+
+.social-btn-twitter::before {
+	content: url(../img/svg/icon-twitter.svg);
+}
+
+.social-btn-instagram::before {
+	content: url(../img/svg/icon-insta.svg);
+}
+
+.social-btn-facebook::before {
+	content: url(../img/svg/icon-fb.svg);
+}
+
+.social-btn-vkontakte::before {
+	content: url(../img/svg/icon-vk.svg);
+}
+
+.footer-subnavigation-link {
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+	color: #fff;
+}
+
+.footer-link-heart {
+	font-weight: bold;
+}
+
+.footer-link-heart::before {
+	content: url(../img/svg/icon-heart.svg);
+	position: absolute;
+	left: 20px;
+}
+
+.footer-studio-label {
+	text-decoration: none;
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
