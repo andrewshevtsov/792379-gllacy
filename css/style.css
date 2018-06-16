@@ -7,16 +7,18 @@ html, body {
 
 body {
 	background-color: #849d8f;
-	font-family: "roboto", sans-serif;
+	font-family: "roboto", Arial, sans-serif;
 	line-height: 22px;
 	color: #fff;
 }
 
 .header-left-navigation-list,
-.header-right-navigation-list,
-.catalog-item,
-.breadcrumbs-item,
-.pagination-item {
+  .header-right-navigation-list,
+  .catalog-item,
+  .inner-catalog-item,
+  .breadcrumbs-item,
+  .pagination-item,
+  .features-item {
 	list-style-type: none;
 }
 
@@ -82,19 +84,57 @@ body {
 	left: 15px;
 }
 
+.header-right-contacts {
+	width: 170px;
+}
+
+.nav-working-tel {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.main-slider {
+	text-align: center;
+}
+
+.btn-red-shadow {
+	box-shadow: 0 2px 5px 0 rgba(160, 32, 11, .5);
+	text-shadow: 0 2px 5px rgba(160, 32, 11, .5);
+}
+
 .slider-btn-link {
 	text-decoration: none;
 	color: #fff;
-	background-image:
-		linear-gradient(to top, #e74a35, #f26843);
+ 	background-image:
+		linear-gradient(to top, #e74a35, #f26843); 
 	font-weight: bold;
 	font-size: 32px;
+	line-height: 44px;
 	padding: 20px 40px;
 	border-radius: 40px;
 }
 
+.slider-toggle {
+	display: flex;
+}
+
+.slider-toggle-item {
+	width: 15px;
+	height: 15px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	list-style-type: none;
+	margin: 0 8px;
+}
+
+.slider-toggle-item:first-child {
+	background-color: #fff;
+}
+
 .get-btn {
-	font-size: 24px;
+	font-size: 18px;
+	line-height: 24px;
 	font-weight: normal;
 	background-image:
 		linear-gradient(to top, #e74a35, #f26843);
@@ -133,7 +173,7 @@ body {
 .catalog-item::before {
 	content: url(../img/svg/icon-circle-hit.svg);
 	position: absolute;
-	left: -5px;
+	left: 40px;
 }
 
 .catalog-item-img {
@@ -144,12 +184,60 @@ body {
 	color: #fff;
 }
 
+.catalog-item-title {
+	font-weight: 400;
+}
+
+.catalog-item-sum {
+	font-size: 45px;
+	line-height: 24px;
+	font-weight: bold;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.ice-weight {
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 14px;
+	font-weight: bold;
+}
+
 .about-info {
 	width: 1147px;
 	height: 305px;
 	border-radius: 15px;
 	background-image: url(../img/jpeg/waffle-pattern.jpg);
 	color: #323232;
+}
+
+.gllacy-title {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+.features-eskimo-icon::before {
+	content: url(../img/svg/icon-eskimo.svg);
+	position: absolute;
+	left: -5px;
+}
+
+.features-leaf-icon::before {
+	content: url(../img/svg/icon-leaf.svg);
+	position: absolute;
+	left: -5px;
+}
+
+.features-cow-icon::before {
+	content: url(../img/svg/icon-cow.svg);
+	position: absolute;
+	left: -5px;
+}
+
+.features-therm-icon::before {
+	content: url(../img/svg/icon-thermometer.svg);
+	position: absolute;
+	left: -5px;
 }
 
 .subscription-block-rubric {
@@ -207,12 +295,23 @@ body {
 	left: 20px;
 }
 
+.btn-sent-email,
+.btn-feedback-submit {
+	color: #fff;
+	background-image: linear-gradient(to top, #e74a35, #f26843);
+	width: 130px;
+	height: 44px;
+	border: none;
+	border-radius: 20px;
+}
+
 .address-container {
 	width: 300px;
 	height: 305px;
 	color: #323232;
 	background-color: #ffffff;
 	border-radius: 15px;
+	margin-bottom: 10px;
 }
 
 .address-bold {
@@ -229,6 +328,11 @@ body {
 
 .social-list, .footer-subnavigation {
 	list-style-type: none;
+}
+
+.social-btn {
+	border: 3px solid rgb(255, 255, 255, .7);
+	border-radius: 50%;
 }
 
 .social-btn-twitter::before {
@@ -267,4 +371,50 @@ body {
 	text-decoration: none;
 	color: #fff;
 	border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.map-container-pin::before {
+	content: 
+		url(../img/svg/icon-pin.svg);
+	position: absolute;
+}
+
+.map-container-pin::after {
+	content: url(../img/jpeg/pin-shadow.png);
+	position: absolute;
+	left: 30px;
+}
+
+input[type="email"],
+input[type="text"],
+.feedback-area {
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid #b2b2b2;
+	background-color: #fff;
+}
+
+.feedback-form {
+	height: 440px;
+	width: 475px;
+	background-color: #fff;
+	color: #333;
+	border-radius: 20px;
+}
+
+.feedback-title {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.feedback-name,
+.feedback-email,
+.feedback-area {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.btn-feedback-submit {
+	margin-left: 55%;
 }
