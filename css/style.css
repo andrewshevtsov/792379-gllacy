@@ -31,6 +31,65 @@ body {
 	color: #fff;
 }
 
+.header-nav {
+	display: flex;
+	border: 1px dotted lightgreen;
+}
+
+.top-header-logo {
+	position: relative;
+	left: 27px;
+	top: 10px;
+}
+
+.header-left-navigation-list {
+	display: flex;
+}
+
+.header-left-navigation-item {
+	margin-right: 20px;
+	padding: 12px 6px;
+}
+
+.header-left-navigation-item:hover,
+.header-left-navigation-link:hover {
+	background-color: #fff;
+	color: #000;
+	border-radius: 20px;
+	border-bottom: none;
+	cursor: pointer;
+}
+
+.dropdown-header-left {
+	border: 1px dotted yellow;
+	height: 170px;
+	background-color: #fff;
+	border-radius: 10px;
+	list-style: none;
+	position: absolute;
+	width: 142px;
+	/*display: none;*/
+}
+
+.dropdown-header-link-title {
+	color: #000;
+	font-weight: bold;
+}
+
+.dropdown-underline {
+	border-bottom: 1px solid #d1d0ce;
+}
+
+.dropdown-header-link {
+	text-decoration: none;
+	color: #000;
+}
+
+.header-right-navigation-list {
+	display: flex;
+	margin-left: auto;
+}
+
 .header-right-navigation-item {
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -41,6 +100,7 @@ body {
 	font-weight: bold;
 	color: #fff;
 	padding: 10px;
+	margin-right: 10px;
 }
 
 .user-search {
@@ -66,8 +126,6 @@ body {
 
 .user-login::before {
 	content: url(../img/svg/icon-login.svg);
-	position: absolute;
-	left: 15px;
 }
 
 .user-basket {
@@ -80,18 +138,24 @@ body {
 
 .user-basket::before {
 	content: url(../img/svg/icon-basket.svg);
-	position: absolute;
-	left: 15px;
 }
 
 .header-right-contacts {
 	width: 170px;
+	position: absolute;
+	top: 96px;
+	right: 27px;
 }
 
 .nav-working-tel {
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: bold;
+}
+
+.visually-hidden {
+	font-size: 0;
+	height: 0;
 }
 
 .main-slider {
