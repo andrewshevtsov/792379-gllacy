@@ -9,33 +9,50 @@
 <body>
     <header class="main-header">
     	<nav class="header-nav">
-	    	<a href="index.html" class="main-page-link">
-	    		<img class="top-header-logo" src="img/svg/logo-big.svg" width="154" heght="64" alt="Логотип интернет-магазина мороженного &laquo;Gllacy Shop&raquo;">
-	    	</a>
-	    	<ul class="header-left-navigation-list">
-	    		<li class="header-left-navigation-item">
-	    			<a class="header-left-navigation-link" href="#">Каталог</a>
-	    		</li>
-	    		<li class="header-left-navigation-item">
-	    			<a class="header-left-navigation-link" href="#">Доставка и оплата</a>
-	    		</li>
-	    		<li class="header-left-navigation-item">
-	    			<a class="header-left-navigation-link" href="#">О компании</a>
-	    		</li>
-	    	</ul>
-			<ul class="header-right-navigation-list">
-				<li class="header-right-navigation-item">
-					<!-- Здесь будет форма для ввода текста -->
-					<a class="header-right-navigation-link user-search"></a>
-				</li>
-				<li class="header-right-navigation-item">
-					<!-- Здесь будет форма авторизации -->
-					<a class="header-right-navigation-link user-login" href="#">Вход</a>
-				</li>
-				<li class="header-right-navigation-item">
-					<a class="header-right-navigation-link user-basket" href="#">Пусто</a>
-				</li>
-			</ul>
+	    	<img class="top-header-logo" src="img/svg/logo-big.svg" width="200" heght="64" alt="Логотип интернет-магазина мороженного &laquo;Gllacy Shop&raquo;">
+		    	<div class="header-nav-list-wrap">
+		    		<ul class="header-left-navigation-list">
+		    			<li class="header-left-navigation-item">
+		    				<a class="header-left-navigation-link" href="#">Каталог</a>
+				    			<ul class="dropdown-inner">
+				    				<li class="dropdown-inner-item dropdown-underline">
+				    					<a class="dropdown-inner-link inner-title">Новинки</a>
+				    				</li>
+				    				<li class="dropdown-inner-item">
+				    					<a href="#" class="dropdown-inner-link">Сливочное</a>
+				    				</li>
+				    				<li class="dropdown-inner-item">
+				    					<a href="#" class="dropdown-inner-link">Щербеты</a>
+				    				</li>
+				    				<li class="dropdown-inner-item">
+				    					<a href="#" class="dropdown-inner-link">Фруктовый лед</a>
+				    				</li>
+				    				<li class="dropdown-inner-item">
+				    					<a href="#" class="dropdown-inner-link">Мелорин</a>
+				    				</li>
+				    			</ul>
+		    				</li>
+		    			<li class="header-left-navigation-item">
+		    				<a class="header-left-navigation-link" href="#">Доставка и оплата</a>
+		    			</li>
+		    			<li class="header-left-navigation-item">
+		    				<a class="header-left-navigation-link" href="#">О компании</a>
+		    			</li>
+		    		</ul>
+					<ul class="header-right-navigation-list">
+						<li class="header-right-navigation-item">
+							<!-- Здесь будет форма для ввода текста -->
+							<a class="header-right-navigation-link user-search"></a>
+						</li>
+						<li class="header-right-navigation-item">
+							<!-- Здесь будет форма авторизации -->
+							<a class="header-right-navigation-link user-login" href="#">Вход</a>
+						</li>
+						<li class="header-right-navigation-item">
+							<a class="header-right-navigation-link user-basket" href="#">Пусто</a>
+						</li>
+					</ul>
+		    	</div>
 			<p class="header-right-contacts">
 				С 10 до 20, ежедневно
 				<span class="nav-working-tel">8 812 450-25-25</span>
@@ -45,21 +62,21 @@
     <main class="main-content">
     	<ul class="breadcrumbs">
     		<li class="breadcrumbs-item">
-    			<a class="main-navigation-link index-page-link" href="index.html">Главная</a>
+    			<a class="catalog-navigation-link index-page-link" href="index.html">Главная</a>
     		</li>
     		<li class="breadcrumbs-item">
-    			<a class="main-navigation-link index-page-link" href="#">Каталог</a>
+    			<a class="catalog-navigation-link catalog-page-link" href="#">Каталог</a>
     		</li>
     		<li class="breadcrumbs-item">
-    			<a class="main-navigation-link index-page-link">Сливочное</a>
+    			<a class="catalog-navigation-link current-page-link">Сливочное</a>
     		</li>
     	</ul>
     	<h1 class="content-title">Сливочное мороженное</h1>
-    	<section class="main-filters">
+    	<section class="catalog-filters">
     		<!-- Здесь будут фильтры товаров -->
     	</section>
     	<section class="catalog-block">
-			<ul class="catalog-list">
+			<ul class="catalog-page-list">
 				<li class="inner-catalog-item">
 					<img class="catalog-item-img" src="img/jpeg/ice-orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="265" height="265">
 					<p class="catalog-item-sum">310 &#8381;<span class="ice-weight">/кг</span></p>
@@ -124,6 +141,9 @@
 		</section>
 		<ul class="catalog-pagination">
 			<li class="pagination-item">
+				<a class="page-arrow-left arrow-disabled">&lt;</a>
+			</li>
+			<li class="pagination-item">
 				<a class="page-number page-number-current">1</a>
 			</li>
 			<li class="pagination-item">
@@ -138,43 +158,49 @@
 			<li class="pagination-item">
 				<a class="page-number" href="#">5</a>
 			</li>
+			<li class="pagination-item">
+				<a class="page-arrow-right">&gt;</a>
+			</li>
 		</ul>
+	    <div class="footer-line"></div>
+	    <footer class="main-footer">
+			<div class="footer-bottom">
+				<ul class="social-list">
+					<li class="social-item">
+						<a class="social-btn social-btn-twitter"></a>
+					</li>
+					<li class="social-item">
+						<a class="social-btn social-btn-instagram"></a>
+					</li>
+					<li class="social-item">
+						<a class="social-btn social-btn-facebook"></a>
+					</li>
+					<li class="social-item">
+						<a class="social-btn social-btn-vkontakte"></a>
+					</li>
+				</ul>
+				<ul class="footer-subnavigation">
+					<li class="footer-subnavigation-item">
+						<a class="footer-subnavigation-link footer-link-heart" href="#">Для поставщиков</a>
+					</li>
+					<li class="footer-subnavigation-item">
+						<a class="footer-subnavigation-link" href="#">Наши документы</a>
+					</li>
+					<li class="footer-subnavigation-item">
+						<a class="footer-subnavigation-link" href="#">О производстве</a>
+					</li>
+					<li class="footer-subnavigation-item">
+						<a class="footer-subnavigation-link" href="#">Экологические стандарты</a>
+					</li>
+				</ul>
+				<div class="footer-copyright">
+					<p class="footer-copyright-text">
+						<img src="img/svg/logo-htmlacademy-small.svg" alt="Логотип HTMLAcademy" width="160" height="50" class="footer-studio-logo">
+						Сделано в <a class="footer-studio-label" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+					</p>
+				</div>
+			</div>
+		</footer>
     </main>
-    <footer class="main-footer">
-		<ul class="social-list">
-			<li class="social-item">
-				<a class="social-btn social-btn-twitter"></a>
-			</li>
-			<li class="social-item">
-				<a class="social-btn social-btn-instagram"></a>
-			</li>
-			<li class="social-item">
-				<a class="social-btn social-btn-facebook"></a>
-			</li>
-			<li class="social-item">
-				<a class="social-btn social-btn-vkontakte"></a>
-			</li>
-		</ul>
-		<ul class="footer-subnavigation">
-			<li class="footer-subnavigation-item">
-				<a class="footer-subnavigation-link footer-link-heart" href="#">Для поставщиков</a>
-			</li>
-			<li class="footer-subnavigation-item">
-				<a class="footer-subnavigation-link" href="#">О производстве</a>
-			</li>
-			<li class="footer-subnavigation-item">
-				<a class="footer-subnavigation-link" href="#">Наши документы</a>
-			</li>
-			<li class="footer-subnavigation-item">
-				<a class="footer-subnavigation-link" href="#">Экологические стандарты</a>
-			</li>
-		</ul>
-		<div class="footer-copyright">
-			<p class="footer-copyright-text">
-				<img src="img/svg/logo-htmlacademy-small.svg" alt="Логотип HTMLAcademy" width="160" height="50">
-				Сделано в <a class="footer-studio-label" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
-			</p>
-		</div>
-	</footer>
 </body>
 </html>
