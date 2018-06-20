@@ -801,6 +801,7 @@ input[type="text"],
 .inner-catalog-item {
 	position: relative;
 	width: 275px;
+	margin-bottom: 35px;
 }
 
 .catalog-pagination {
