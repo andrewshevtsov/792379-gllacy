@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    		<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+				<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+				<input class="visually-hidden" type="radio" id="product-3" name="toggle">			
+
+    <main class="main-content">
+		  <header class="main-header">
     	<nav class="header-nav">
 	    	<img class="top-header-logo" src="img/svg/logo-big.svg" width="154" heght="64" alt="Логотип интернет-магазина мороженного &laquo;Gllacy Shop&raquo;">
 	    		<ul class="header-left-navigation-list">
@@ -101,20 +106,33 @@
 				</p>
     	</nav>
     </header>
-    <main class="main-content">
-    	<h1 class="visually-hidden">Интернет-магазин мороженного &laquo;Gllacy Shop&raquo;</h1>
+
+    <h1 class="visually-hidden">Интернет-магазин мороженного &laquo;Gllacy Shop&raquo;</h1>
 		<section class="main-present">
 			<figure class="main-slider">
-				<img class="slider-background" alt="Фото крем-брюле и пломбира с малиновым джемом" width="1045" height="881" src="img/jpeg/ice-big.png">
-				<h2 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h2>
-				<div class="slider-btn-group">
-					<ul class="slider-toggle">
-						<li class="slider-toggle-item __current-slide"></li>
-						<li class="slider-toggle-item"></li>
-						<li class="slider-toggle-item"></li>
-					</ul>
-					<a class="slider-btn-link btn-red-shadow" href="#">Давайте оба!</a>
+				<div class="slider-controls">
+					<label for="product-1">Первый</label>
+					<label for="product-2">Второй</label>
+					<label for="product-3">Третий</label>
 				</div>
+
+				<ul class="slider-list">
+					<li class="slider-item current-slide" id="raspberry-slide">
+						<h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+						<a class="slide-btn-link btn-red-shadow">Давайте оба!</a>
+					</li>
+					<li class="slider-item current-slide" id="lemon-slide">
+						<h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+						<a class="slide-btn-link btn-red-shadow">Давайте оба!</a>
+					</li>
+					<li class="slider-item current-slide" id="strawberry-slide">
+						<h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+						<a class="slide-btn-link btn-red-shadow">Давайте оба!</a>
+					</li>
+				</ul>
+
+<!-- 				<img class="slider-background" alt="Фото крем-брюле и пломбира с малиновым джемом" width="1045" height="881" src="img/jpeg/ice-big.png"> -->
+
 			</figure>
 		</section>
 		<section class="promo-block">
@@ -141,21 +159,25 @@
 					<img class="catalog-item-img" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="265" height="265" src="img/jpeg/ice-orange.jpg">
 					<p class="catalog-item-sum">310 &#8381;<span class="ice-weight">/кг</span></p>					
 					<a class="catalog-item-link" href="#"><h3 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
+					<a class="catalog-fast-preview btn-red-shadow">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-item">
 					<img class="catalog-item-img" alt="Сливочно-кофейное с кусочками шоколада" width="265" height="265" src="img/jpeg/ice-choco.jpg">
 					<p class="catalog-item-sum">380 &#8381;<span class="ice-weight">/кг</span></p>					
 					<a class="catalog-item-link" href="#"><h3 class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</h3></a>
+					<a class="catalog-fast-preview btn-red-shadow">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-item">
 					<img class="catalog-item-img" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="265" height="265" src="img/jpeg/ice-strawberry.jpg">
 					<p class="catalog-item-sum">355 &#8381;<span class="ice-weight">/кг</span></p>					
 					<a class="catalog-item-link" href="#"><h3 class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</h3></a>
+					<a class="catalog-fast-preview btn-red-shadow">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-item">
 					<img class="catalog-item-img" alt="Сливочное крем-брюле с карамельной подливкой" width="265" height="265" src="img/jpeg/ice-caramel.jpg">
 					<p class="catalog-item-sum">415 &#8381;<span class="ice-weight">/кг</span></p>					
 					<a class="catalog-item-link" href="#"><h3 class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</h3></a>
+					<a class="catalog-fast-preview btn-red-shadow">Быстрый просмотр</a>
 				</li>
 			</ul>
 		</section>
@@ -210,7 +232,7 @@
 					<p class="address-normal">Для заказов по телефону:</p>
 					<span class="address-bold">8 812 450-25-25</span>
 					<p class="address-normal">(с 10 до 20 ежедневно)</p>
-					<a class="callback-btn btn-red-shadow" href="#">Форма обратной связи</a>
+					<a class="callback-btn btn-red-shadow">Форма обратной связи</a>
 				</div>
 				<img src="img/jpeg/map.jpg" alt="Наш адрес" class="image-map">
 			</div>
@@ -274,16 +296,25 @@
 				</div>
 			</div>
 		</footer>
-		<form class="feedback-form">
-			<span class="feedback-btn-close"></span>
-			<p class="feedback-title">Мы обязательно вам ответим!</p>
-			<label for="feedback-name"></label>
-			<input class="feedback-name" type="text" id="feedback-name" name="feedback-name" placeholder="Как Вас зовут?">
-			<label for="feedback-email"></label>
-			<input class="feedback-email" type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
-			<textarea class="feedback-area" name="feedback-area" id="feedback-area" cols="45" rows="7" placeholder="Напишите что-нибудь..."></textarea>
-			<input class="btn-feedback-submit btn-red-shadow" type="submit" value="Отправить">
-		</form>
+
+			<div class="fixed-wrap fixed-wrap__modal">
+				<div class="modal">
+					<div class="modal-container">
+						<div class="move-container"></div>
+						<form class="feedback-form">
+							<span class="feedback-btn-close"></span>
+							<p class="feedback-title">Мы обязательно вам ответим!</p>
+							<label for="feedback-name"></label>
+							<input class="feedback-name" type="text" id="feedback-name" name="feedback-name" placeholder="Как Вас зовут?">
+							<label for="feedback-email"></label>
+							<input class="feedback-email" type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
+							<textarea class="feedback-area" name="feedback-area" id="feedback-area" cols="45" rows="7" placeholder="Напишите что-нибудь..."></textarea>
+							<input class="btn-feedback-submit btn-red-shadow" type="submit" value="Отправить">
+						</form>
+					</div>
+				</div>
+			</div>
     </main>
+    <script src="js/main.js"></script>
   </body>
 </html>
