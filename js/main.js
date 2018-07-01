@@ -1,27 +1,30 @@
-let modalWindow = (function() {
+let modalWindow = ( () => {
 
-	let _init = function() {
+	let _init = () => {
 		_eventsListener();
 	}
 
 	let modal = document.querySelector('.modal');
 	let modalOverlay = document.querySelector('.fixed-wrap');
+	let feedbackBtnClose = document.querySelector('.feedback-btn-close');
 
-	let _eventsListener = function() {
+
+	let _eventsListener = () => {
 		modalButton.addEventListener('click', _showModal, false);
 		modalOverlay.addEventListener('click', _closeModal, false);
+		feedbackBtnClose.addEventListener('click', _closeModal, false);
 		modal.addEventListener('click', _stopProp, false);
 	}
 
-	let _stopProp = function(event) {
+	let _stopProp = (event) => {
 		event.stopPropagation();
 	}
 
-	let _showModal = function() {
+	let _showModal = () => {
 		modalOverlay.classList.add('_show'); 
 	}
 
-	let _closeModal = function() {
+	let _closeModal = () => {
 		modalOverlay.classList.remove('_show');
 	}
 
