@@ -16,15 +16,17 @@ let modalWindow = ( () => {
 		modal.addEventListener('click', _stopProp, false);
 	}
 
-	let _stopProp = (event) => {
-		event.stopPropagation();
+	let _stopProp = (evt) => {
+		evt.stopPropagation();
 	}
 
-	let _showModal = () => {
+	let _showModal = (evt) => {
+		evt.preventDefault();
 		modalOverlay.classList.add('_show'); 
 	}
 
-	let _closeModal = () => {
+	let _closeModal = (evt) => {
+		evt.preventDefault();
 		modalOverlay.classList.remove('_show');
 	}
 

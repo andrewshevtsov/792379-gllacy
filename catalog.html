@@ -12,7 +12,7 @@
 			<header class="main-header">
 				<nav class="header-nav">
 					<a href="index.html" class="main-page-link">
-						<img class="top-header-logo" src="img/svg/logo-big.svg" width="154" heght="64" alt="Логотип интернет-магазина мороженного &laquo;Gllacy Shop&raquo;"></a>
+						<img class="top-header-logo" src="img/svg/logo-big.svg" width="154" height="64" alt="Логотип интернет-магазина мороженного &laquo;Gllacy Shop&raquo;"></a>
 						<ul class="header-left-navigation-list">
 							<li class="header-left-navigation-item">
 								<a class="header-left-navigation-link __page-active">Каталог</a>
@@ -48,9 +48,11 @@
 										<path id="lens" fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
 									</svg>
 								</a>
-								<label for="user-search" class="user-search-field"><span class="visually-hidden">Поиск</span>
-									<input type="text" class="user-search-text common-inputs" id="user-search" name="user-search" placeholder="Что ищем?">
-								</label>
+								<form action="#" method="POST">
+									<label for="user-search" class="user-search-field"><span class="visually-hidden">Поиск</span>
+										<input type="text" class="user-search-text common-inputs" id="user-search" name="user-search" placeholder="Что ищем?">
+									</label>									
+								</form>
 							</li>
 							<li class="header-right-navigation-item">
 								<a class="header-right-navigation-link user-login" href="#">
@@ -165,7 +167,7 @@
 							</div>
 							<div class="range-wrap">
 								<div class="range-title">
-									<span for="range-duo" class="range-duo-title">Цена:</span>
+									<span class="range-duo-title">Цена:</span>
 									<label for="price-min" class="visually-hidden">Цена от</label>
 									<input type="text" name="price-min" id="price-min" class="price-min" placeholder="100 руб.">
 									<label for="price-max" class="visually-hidden">Цена до</label>
@@ -175,8 +177,8 @@
 									<div class="range-total">
 										<div class="range-limit"></div>
 									</div>
-								<div class="switch-first"></div>
-								<div class="switch-second"></div>
+									<div class="switch-first"></div>
+									<div class="switch-second"></div>
 								</div>
 							</div>
 							<div class="radio-wrap">
@@ -185,19 +187,19 @@
 										<ul class="radio-wrap-list">
 											<li class="radio-wrap-item">
 												<input class="fat-filter" type="radio" name="radio" id="fat_0">
-												<label for="fat_0">0%</label>
+												<label for="fat_0" tabindex="0">0%</label>													
 											</li>
 											<li class="radio-wrap-item">
 												<input class="fat-filter" type="radio" name="radio" id="fat_10" checked>
-												<label for="fat_10">до 10%</label>
+												<label for="fat_10" tabindex="0">до 10%</label>													
 											</li>
 											<li class="radio-wrap-item">
 												<input class="fat-filter" type="radio" name="radio" id="fat_30">
-												<label for="fat_30">до 30%</label>
+												<label for="fat_30" tabindex="0">до 30%</label>													
 											</li>
 											<li class="radio-wrap-item">
 												<input class="fat-filter" type="radio" name="radio" id="fat_more_30">
-												<label for="fat_more_30">выше 30%</label>
+												<label for="fat_more_30" tabindex="0">выше 30%</label>
 											</li>
 										</ul>
 									</div>
@@ -210,28 +212,28 @@
 									<ul class="checkbox-list">
 										<li class="checkbox-list-item">
 											<input type="checkbox" class="extends extends_0" name="extends_0" id="extends_0" checked>
-											<label for="extends_0">шоколадные</label>
+											<label for="extends_0" tabindex="0">шоколадные</label>
 										</li>
 										<li class="checkbox-list-item">
 											<input type="checkbox" class="extends extends_1" name="extends_1" id="extends_1" checked>
-											<label for="extends_1">сахарные присыпки</label>
+											<label for="extends_1" tabindex="0">сахарные присыпки</label>
 										</li>
 										<li class="checkbox-list-item">
 											<input type="checkbox" class="extends extends_2" name="extends_2" id="extends_2">
-											<label for="extends_2">фрукты</label>
+											<label for="extends_2" tabindex="0">фрукты</label>
 										</li>
 										<li class="checkbox-list-item">
 											<input type="checkbox" class="extends extends_3" name="extends_3" id="extends_3">
-											<label for="extends_3">сиропы</label>
+											<label for="extends_3" tabindex="0">сиропы</label>
 										</li>
 										<li class="checkbox-list-item">
 											<input type="checkbox" class="extends extends_4" name="extends_4" id="extends_4">
-											<label for="extends_4">джемы</label>
+											<label for="extends_4" tabindex="0">джемы</label>
 										</li>
 									</ul>
 								</div>
 							</div>
-							<button type="button" class="form-accept-btn">Применить</button>
+							<button type="submit" class="form-accept-btn">Применить</button>
 						</div>
 					</form>
 				</section>
@@ -304,8 +306,8 @@
 							<a class="catalog-fast-preview btn-red-shadow">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item item-padding">
-							<img class="catalog-item-img" src="img/jpeg/ice-mint.jpg" alt="Сливочное с мятным сиропом" 5" height="265">
-							<p class="catalog-item-sum">420 &#8381;<span class="ice-weight">/кг</spa></p>
+							<img class="catalog-item-img" src="img/jpeg/ice-mint.jpg" alt="Сливочное с мятным сиропом" width="265" height="265">
+							<p class="catalog-item-sum">420 &#8381;<span class="ice-weight">/кг</span></p>
 							<a class="catalog-item-link" href="#"><h3 class="catalog-item-title">Сливочное с мятным сиропом</h3></a>
 							<a class="catalog-fast-preview btn-red-shadow">Быстрый просмотр</a>
 						</li>
