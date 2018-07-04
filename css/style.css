@@ -101,8 +101,8 @@ input[type='email']:hover,
 
 .header-nav
 {
+	position: relative;
     display: flex;
-
     margin-right: auto;
     margin-left: auto;
 
@@ -117,13 +117,14 @@ input[type='email']:hover,
 
 .header-left-navigation-list
 {
-    display: flex;
-
+display: flex;
     margin: 0;
     padding: 0;
-
+    padding-left: 8px;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 7px;
+    margin-left: 3px;
 }
 
 .header-left-navigation-item
@@ -132,15 +133,10 @@ input[type='email']:hover,
     padding-bottom: 5px;
 }
 
-.header-left-navigation-item:not(:last-child)
-{
-    margin-right: 10px;
-}
-
 .header-left-navigation-link
 {
     display: inline-block;
-    padding: 7px 15px;
+    padding: 7px 14px;
     border-bottom: none;
     font-size: 16px;
     line-height: 18px;
@@ -235,15 +231,17 @@ input[type='email']:hover,
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+
+._main-list {
+	margin-bottom: 0;
 }
 
 .header-right-navigation-item {
 	margin-left: 10px;
-	
-}
-
-.header-right-navigation-item
-{
     position: relative;
     padding-bottom: 5px;
 }
@@ -292,13 +290,13 @@ input[type='email']:hover,
 .user-search svg
 {
     position: absolute;
-    top: 5px;
-    left: 5px;
+top: 7px;
+    left: 8px;
 }
 
-.header-right-navigation-item:hover svg #lens,
-.header-right-navigation-item:hover svg #login,
-.header-right-navigation-item:hover svg #basket
+.header-right-navigation-item:hover svg .lens,
+.header-right-navigation-item:hover svg .login,
+.header-right-navigation-item:hover svg .basket
 {
     fill: #000;
 }
@@ -342,10 +340,9 @@ input[type='email']:hover,
        -moz-box-sizing: border-box;
             box-sizing: border-box;
     width: 92px;
-    height: 32px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 28px;
 
     text-align: center;
 
@@ -357,7 +354,7 @@ input[type='email']:hover,
 {
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: 17px;
 }
 
 .user-login-list
@@ -456,10 +453,11 @@ input[type='email']:hover,
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    width: 120px;
-    height: 32px;
-    padding-top: 5px;
-    padding-left: 20px;
+width: 117px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 42px;
+    padding-right: 13px;
 
     text-align: center;
 
@@ -471,7 +469,11 @@ input[type='email']:hover,
 {
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: 15px;
+}
+
+._main-basket {
+	width: 100px;
 }
 
 .__not-empty-basket
@@ -672,9 +674,24 @@ input[type='email']:hover,
 
 .header-right-contacts
 {
-    width: 170px;
-    margin: 0;
-    margin-left: auto;
+  width: 170px;
+  position: absolute;
+  right: 252px;
+  top: 59px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+}
+
+._inner-page-contacts {
+	position: absolute;
+	right: 0px;
+  top: 49px;
+}
+
+.nav-working-time {
+	text-align: right;
+	margin-bottom: 2px;
 }
 
 .nav-working-tel
@@ -682,6 +699,8 @@ input[type='email']:hover,
     font-size: 22px;
     font-weight: bold;
     line-height: 24px;
+    display: inline-block;
+    padding-top: 3px;
 }
 
 .visually-hidden
@@ -711,12 +730,9 @@ input[type='email']:hover,
 .main-present
 {
     position: relative;
-
-    margin-bottom: 56px;
-    padding-top: 321px;
-
+    margin-bottom: 40px;
+    padding-top: 318px;
     text-align: center;
-
     color: #fff;
 }
 
@@ -745,21 +761,20 @@ input[type='email']:hover,
 .slide-title
 {
     font-size: 60px;
-    font-weight: 800;
     line-height: 60px;
+    font-weight: 800;
 
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
 }
 
 .slider-controls
 {
-    font-size: 0;
-
-    position: absolute;
-    z-index: 3;
-    bottom: 63px;
+		font-size: 0;
+		position: absolute;
+		z-index: 3;
+    bottom: 23px;
     left: 27px;
 }
 
@@ -840,19 +855,15 @@ input[type='email']:hover,
 
 .slide-btn-link
 {
-    font-size: 31px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 41px;
-
     display: inline-block;
-
-    padding: 12px 44px;
-
+    padding: 12px 41px;
     cursor: pointer;
     text-align: center;
     vertical-align: top;
     text-decoration: none;
-
     color: #fff;
     border: none;
     border-radius: 40px;
@@ -874,7 +885,6 @@ input[type='email']:hover,
     font-size: 35px;
     font-weight: bold;
     line-height: 41px;
-
     margin: 0;
 }
 
@@ -882,6 +892,9 @@ input[type='email']:hover,
 {
     font-size: 18px;
     line-height: 22px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 45px;
 }
 
 .get-btn
@@ -889,14 +902,10 @@ input[type='email']:hover,
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
-
-    margin-right: 10px;
     margin-left: auto;
-    padding: 10px 20px;
-
+    padding: 10px 22px;
     text-align: center;
     text-decoration: none;
-
     color: #fff;
     border-radius: 25px;
     background-image: linear-gradient(to top, #e74a35, #f26843);
@@ -916,15 +925,12 @@ input[type='email']:hover,
 {
     display: flex;
     flex-direction: column;
-
     box-sizing: border-box;
     width: 560px;
-    padding: 20px 15px;
+    padding: 15px 20px;
     padding-bottom: 25px;
-
     list-style-type: none;
-
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .raspberries-bg
@@ -946,7 +952,12 @@ input[type='email']:hover,
 }
 
 .catalog-block {
-	padding-left: 33px;
+	padding-left: 28px;
+	margin-bottom: 45px;
+}
+
+._main-catalog-block {
+	margin-bottom: 22px;
 }
 
 .catalog-list
@@ -974,12 +985,12 @@ input[type='email']:hover,
 
 .item-padding
 {
-    padding-bottom: 40px;
+    padding-bottom: 25px;
 }
 
 .catalog-item:not(:nth-child(4n))
 {
-    margin-right: 25px;
+    margin-right: 28px;
 }
 
 .item-before::before
@@ -1024,6 +1035,11 @@ input[type='email']:hover,
     border-radius: 50%;
 }
 
+.link-description {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 .catalog-item-link
 {
     z-index: 5;
@@ -1051,11 +1067,18 @@ input[type='email']:hover,
     z-index: 5;
 
     margin: 0;
-    margin-top: -70px;
+    margin-top: -66px;
 
     text-align: left;
-
+		letter-spacing: -1px;
     text-shadow: 0 1px 3px rgba(49, 50, 53, .5);
+}
+
+.total-amount {
+		position: relative;
+		top: 0;
+		left: -4px;
+		font-weight: 400;
 }
 
 .catalog-fast-preview
@@ -1078,10 +1101,9 @@ input[type='email']:hover,
 
 .ice-weight
 {
-    font-size: 24px;
-    font-weight: normal;
+    font-size: 30px;
     font-weight: bold;
-    line-height: 14px;
+    line-height: 55px;
 }
 
 .about-info
@@ -1099,27 +1121,25 @@ input[type='email']:hover,
 
 .waffle-title
 {
-    margin-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: 22px;
+    padding-top: 25px;
     padding-left: 20px;
 }
 
 .gllacy-title
 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 30px;
+    letter-spacing: .2px;
 }
 
 .features-list
 {
     position: relative;
-
     display: flex;
-
     margin: 0;
-    padding: 0 35px 0 75px;
-
+    padding: 0 26px 0 76px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -1127,9 +1147,10 @@ input[type='email']:hover,
 .features-item
 {
     position: relative;
-
     width: 480px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .features-item::before
@@ -1162,9 +1183,7 @@ input[type='email']:hover,
 .blog-container
 {
     display: flex;
-
     margin-bottom: 40px;
-
     justify-content: center;
 }
 
@@ -1188,10 +1207,8 @@ input[type='email']:hover,
 .rubric-title
 {
     font-weight: 600;
-
-    margin-top: 25px;
+    margin-top: 5px;
     margin-bottom: 5px;
-
     color: #323232;
 }
 
@@ -1236,7 +1253,10 @@ input[type='email']:hover,
 .subscribe-info
 {
     margin: 0;
-    padding-bottom: 40px;
+    padding-top: 5px;
+    padding-bottom: 34px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .subscribe-inner
@@ -1251,26 +1271,27 @@ input[type='email']:hover,
     background-color: #f8f7f4;
 }
 
-
+.subscribe-mailing input[type="email"] {
+	padding: 12px;
+}
 
 .btn-sent-email,
 .btn-feedback-submit
 {
     width: 130px;
-    padding: 15px 20px;
-
+    padding: 11px 20px;
     color: #fff;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     background-image: linear-gradient(to top, #e74a35, #f26843);
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .main-footer
 {
     position: relative;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .address-container
@@ -1278,7 +1299,7 @@ input[type='email']:hover,
     position: absolute;
     z-index: 1;
     top: 62px;
-    right: 27px;
+    right: 28px;
 
     display: flex;
     flex-direction: column;
@@ -1303,12 +1324,18 @@ input[type='email']:hover,
 
 .address-normal:first-child
 {
-    margin-top: 15px;
+    margin-top: 20px;
+    width: 155px;
 }
 
 .address-normal:nth-child(3)
 {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.time-interval {
+	margin-top: 3px;
 }
 
 .address-bold
@@ -1321,21 +1348,29 @@ input[type='email']:hover,
     margin: 0;
 }
 
+
+
+.address-bold:last-child {
+	padding-bottom: 5px;
+}
+
 .callback-btn
 {
-    font-size: 18px;
-    line-height: 24px;
-
-    width: 200px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    padding: 13px 25px;
-
-    text-decoration: none;
-
-    color: #fff;
-    border-radius: 24px;
-    background-image: linear-gradient(to top, #e74a35, #f26843);
+		font-size: 18px;
+		text-align: right;
+		line-height: 24px;
+		width: 198px;
+		margin-top: 23px;
+		margin-bottom: 30px;
+		margin-left: -1px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 27px;
+		padding-right: 27px;
+		text-decoration: none;
+		color: #fff;
+		border-radius: 24px;
+		background-image: linear-gradient(to top, #e74a35, #f26843);
 }
 
 .map-container-pin
@@ -1369,44 +1404,54 @@ input[type='email']:hover,
 .footer-bottom
 {
     display: flex;
-    margin-left: 27px;
-    margin-right: 27px;
+    margin-left: 24px;
+    margin-right: 25px;
 }
 
 .social-list
 {
-    display: flex;
+		display: flex;
+		width: 195px;
+		margin: 36px 0 0 0;
+		padding: 0;
+		justify-content: space-around;
+}
 
-    width: 185px;
-    margin: 20px 0 0 0;
-    padding: 0;
+.social-item:nth-child(1) {
+  position: relative;
+  top: 0;
+  left: -1px;
+}
 
-    justify-content: space-around;
+.social-item:nth-child(2) {
+  position: relative;
+  top: 0;
+  left: -1px;
 }
 
 .footer-subnavigation
 {
-    display: flex;
-
+display: flex;
     width: 310px;
     height: 35px;
-    margin: auto auto 32px 235px;
+    margin: auto auto 9px 230px;
     padding: 0;
-
     flex-wrap: wrap;
     justify-content: flex-start;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .footer-subnavigation-item:nth-child(1)
 {
     position: relative;
-
-    margin-right: 15px;
+		padding-bottom: 4px;
+    margin-right: 32px;
 }
 
 .footer-subnavigation-item:nth-child(3)
 {
-    margin-right: 27px;
+    margin-right: 45px;
 }
 
 .social-btn
@@ -1456,9 +1501,8 @@ input[type='email']:hover,
 .footer-link-heart::before
 {
     position: absolute;
-    top: 6px;
-    left: -20px;
-
+    top: 3px;
+    left: -21px;
     content: url(../img/svg/icon-heart.svg);
 }
 
@@ -1471,17 +1515,15 @@ input[type='email']:hover,
 {
     font-size: 12px;
     line-height: 18px;
-
     position: relative;
-
     margin: 0;
-    margin-top: 65px;
+    margin-top: 60px;
 }
 
 .footer-studio-logo
 {
     position: absolute;
-    top: -55px;
+    top: -42px;
     left: -8px;
 }
 
@@ -1592,11 +1634,11 @@ input[type='email']:hover,
 .breadcrumbs
 {
     display: flex;
-
     margin: 0;
     padding: 0;
-    margin-left: 27px;
-
+		margin-top: 20px;
+		margin-left: 28px;
+		margin-bottom: 5px;
     flex-wrap: wrap;
 }
 
@@ -1605,12 +1647,14 @@ input[type='email']:hover,
     font-size: 14px;
     line-height: 16px;
 
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 .breadcrumbs-item:not(:last-child)::after
 {
     content: '»';
+    position: relative;
+    left: 5px;
 }
 
 .catalog-filters {
@@ -1620,22 +1664,22 @@ input[type='email']:hover,
 
 .form-filters-top {
 	display: flex;
-	margin-bottom: 30px;
+	margin-bottom: 13px;
 }
 
 .select-wrap {
-	width: 190px;
+	width: 194px;
   display: flex;
   flex-direction: column;
   position: relative;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .select-sort {
 	background-color: rgba(255,255,255, .2);
 	border: none;
 	color: #fff;
-	padding: 8px 0 8px 15px;
+	padding: 10px 0 8px 15px;
 	border-radius: 20px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -1645,9 +1689,22 @@ input[type='email']:hover,
 .select-sort-title,
 .checkbox-wrap-title {
 	padding-left: 15px;
-	margin-bottom: 10px;
+	margin-bottom: 6px;
 	font-size: 14px;
 	line-height: 16px;
+}
+
+._sort-self-title {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+._price-self-title {
+
+}
+
+._fat-self-title {
+
 }
 
 .select-sort-item {
@@ -1667,22 +1724,23 @@ input[type='email']:hover,
 
 .select-arrow-down {
 	position: absolute;
-	right: 15px;
+	right: 14px;
   top: 40px;
 }
 
 .range-wrap {
+	width: 220px;
 	display: flex;
   flex-direction: column;
   position: relative;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .range-wrap::after {
   content: '';
   position: absolute;
-  top: 8px;
-  left: 112px;
+  top: 11px;
+  left: 114px;
   width: 7px;
   height: 2px;
   background-color: #fff;
@@ -1704,23 +1762,26 @@ input[type='email']:hover,
 }
 
 .range-title {
-	font-size: 14px;
-	line-height: 16px;
-	margin-bottom: 10px;
+	position: relative;
+	left: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    margin-top: 4px;
 }
 
 .range-duo-title {
-	padding-left: 15px;
+	padding-left: 12px;
 }
 
 .range-scale {
-	padding: 15px 20px;
+	padding: 16px 20px;
 	background-color: rgba(255,255,255, .2);
 	border-radius: 20px;
 }
 
 .range-total {
-	width: 175px;
+	width: 180px;
 	height: 4px;
 	background: #d1dad3;
 }
@@ -1744,11 +1805,11 @@ input[type='email']:hover,
 }
 
 .switch-first {
-	left: 29px;
+	left: 35px;
 }
 
 .switch-second {
-  right: 54px;
+  right: 67px;
 }
 
 .switch-first:hover,
@@ -1762,7 +1823,7 @@ input[type='email']:hover,
 }
 
 .checkbox-wrap {
-	width: 700px;
+	width: 703px;
 }
 
 .checkbox-list {
@@ -1773,9 +1834,18 @@ input[type='email']:hover,
 	padding: 0;
 }
 
-.checkbox-list-item {
+.checkbox-list-item:not(:last-child) {
   padding-left: 33px;
-  padding-right: 12px;
+  padding-right: 22px;
+}
+
+.checkbox-list-item:first-child {
+  padding-left: 35px;
+  padding-right: 20px;
+}
+
+.checkbox-list-item:nth-child(4) {
+	padding-right: 53px;
 }
 
 .extends + label::before {
@@ -1796,6 +1866,11 @@ input[type='email']:hover,
 	left: -33px;
 }
 
+.radio-wrap {
+	width: 415px;
+	padding-top: 2px;
+}
+
 .radio-wrap-title {
 	font-size: 14px;
 	line-height: 16px;
@@ -1803,21 +1878,20 @@ input[type='email']:hover,
 }
 
 .filters-background {
-	padding: 7px 12px;
+	padding: 8px 12px;
+	padding-right: 0;
 	background-color: rgba(255,255,255, .2);
 	border-radius: 20px;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 .radio-wrap-list {
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	margin-left: auto;
-	width: 385px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .fat-filter {
@@ -1825,8 +1899,8 @@ input[type='email']:hover,
 }
 
 .radio-wrap-item {
-  padding-left: 33px;
-  padding-right: 12px;
+  padding-left: 32px;
+  padding-right: 18px;
 }
 
 .radio-wrap-item label {
@@ -1867,15 +1941,19 @@ input[type='email']:hover,
 	display: block;
 }
 
+.checkbox-list-item:last-child label {
+	padding-left: 4px;
+}
+
 .form-accept-btn {
-	width: 143px;
-	height: 32px;
-	border: 2px solid #fff;
-	border-radius: 20px;
-	align-self: flex-end;
-	background-color: rgba(255,255,255, .2);
-	color: #fff;
-	margin-left: 14px;
+  width: 144px;
+  padding: 7px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  align-self: flex-end;
+  background-color: rgba(255,255,255, .2);
+  color: #fff;
+  margin-left: 14px;
 }
 
 .form-accept-btn:hover {
@@ -1910,7 +1988,9 @@ input[type='email']:hover,
 {
     font-size: 35px;
     line-height: 41px;
+    margin: 0;
     margin-left: 27px;
+    margin-bottom: 20px;
 }
 
 .catalog-page-list
@@ -1928,12 +2008,19 @@ input[type='email']:hover,
 .catalog-pagination
 {
     display: flex;
-
-    width: 190px;
-    margin-left: auto;
-		margin-right: 27px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    width: 220px;
+    margin-left: auto;
+		padding: 0;
+}
+
+.pagination-item:first-child {
+	position: relative;
+	left: -5px;
+}
+
+.pagination-item:last-child {
+	margin-left: 5px;
 }
 
 .page-number
@@ -1956,24 +2043,44 @@ input[type='email']:hover,
     background-color: rgba(255, 255, 255, .2);
 }
 
-.arrow-disabled
-{
-    opacity: .3;
+.page-number:active {
+	background-color: #fff;
 }
 
-.page-number-current
-{
-    font-weight: bold;
+.previous-page svg {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
 
+.next-page,
+.previous-page {
+	padding: 5px 10px;
+	border-radius: 50%;
+}
+
+.previous-page:hover {
+	background-color: rgba(255, 255, 255, .2);
+	cursor: pointer;
+}
+
+.next-page:hover {
+    cursor: pointer;
     color: #000;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.next-page:active,
+.previous-page:active {
+	background-color: #fff;
 }
 
 .footer-line
 {
     width: 1150px;
     height: 1px;
-    margin-top: 30px;
+    margin-top: 32px;
     margin-right: auto;
     margin-left: auto;
 
