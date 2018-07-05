@@ -1,31 +1,31 @@
-let modalWindow = ( () => {
+var modalWindow = ( function () {
 
-	let _init = () => {
+	var _init = function () {
 		_eventsListener();
 	}
 
-	let modal = document.querySelector('.modal');
-	let modalOverlay = document.querySelector('.fixed-wrap');
-	let feedbackBtnClose = document.querySelector('.feedback-btn-close');
+	var modal = document.querySelector('.modal');
+	var modalOverlay = document.querySelector('.fixed-wrap');
+	var feedbackBtnClose = document.querySelector('.feedback-btn-close');
 
 
-	let _eventsListener = () => {
+	var _eventsListener = function () {
 		modalButton.addEventListener('click', _showModal, false);
 		modalOverlay.addEventListener('click', _closeModal, false);
 		feedbackBtnClose.addEventListener('click', _closeModal, false);
 		modal.addEventListener('click', _stopProp, false);
 	}
 
-	let _stopProp = (evt) => {
+	var _stopProp = function (evt) {
 		evt.stopPropagation();
 	}
 
-	let _showModal = (evt) => {
+	var _showModal = function (evt) {
 		evt.preventDefault();
 		modalOverlay.classList.add('_show'); 
 	}
 
-	let _closeModal = (evt) => {
+	var _closeModal = function (evt) {
 		evt.preventDefault();
 		modalOverlay.classList.remove('_show');
 	}
@@ -38,7 +38,7 @@ let modalWindow = ( () => {
 
 })();
 
-let modalButton = document.querySelector('.callback-btn');
+var modalButton = document.querySelector('.callback-btn');
 
 if (!modalButton) {
 	console.error("кнопки нет на странице")
