@@ -1851,6 +1851,11 @@ input[type='email']:hover,
   opacity: .2;
 }
 
+.fat-filter:focus+label,
+.extends:focus+label {
+  outline: 2px solid rgb(104, 151, 199);
+}
+
 .checkbox-list-item label {
   position: relative;
   display: block;
