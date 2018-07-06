@@ -1803,10 +1803,6 @@ input[type='email']:hover,
   flex-wrap: wrap;
 }
 
-.fat-filter {
-  display: none;
-}
-
 .radio-wrap-item {
   padding-right: 18px;
   padding-left: 32px;
@@ -1853,10 +1849,6 @@ input[type='email']:hover,
 .fat-filter:disabled+label::before,
 .fat-filter:disabled+label::after {
   opacity: .2;
-}
-
-.extends {
-  display: none;
 }
 
 .checkbox-list-item label {
