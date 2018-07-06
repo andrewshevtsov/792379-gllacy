@@ -626,14 +626,16 @@ input[type='email']:hover,
 }
 
 .header-right-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
   font-size: 14px;
   line-height: 16px;
-  position: absolute;
-  top: 59px;
-  right: 27px;
   width: 170px;
   text-align: right;
   letter-spacing: .1px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ._inner-page-contacts {
@@ -676,7 +678,7 @@ input[type='email']:hover,
 .main-present {
   position: relative;
   margin-bottom: 40px;
-  padding-top: 318px;
+  padding-top: 275px;
   text-align: center;
   color: #fff;
 }
@@ -1302,6 +1304,7 @@ input[type='email']:hover,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   width: 195px;
   margin: 35px 0 0 0;
   padding: 0;
@@ -1726,27 +1729,25 @@ input[type='email']:hover,
   flex-wrap: wrap;
 }
 
-.checkbox-list-item:not(:last-child) {
-  padding-right: 22px;
-  padding-left: 33px;
+ .checkbox-list-item:not(:last-child) {
+  padding-right: 18px;
 }
 
-.checkbox-list-item:first-child {
-  padding-right: 20px;
-  padding-left: 35px;
-}
+ .checkbox-list-item:nth-child(3) {
+  padding-right: 21px;
+} 
 
-.checkbox-list-item:nth-child(4) {
-  padding-right: 53px;
-}
+ .checkbox-list-item:nth-child(4) {
+  padding-right: 21px;
+} 
 
 .extends+label::before {
+  content: '';
   position: absolute;
   top: 0;
-  left: -30px;
+  left: 5px;
   width: 16px;
   height: 16px;
-  content: '';
   opacity: .5;
   border: 2px solid #fff;
   border-radius: 3px;
@@ -1755,7 +1756,7 @@ input[type='email']:hover,
 .extends:checked+label::after {
   position: absolute;
   top: 0;
-  left: -33px;
+  left: 2px;
   opacity: .5;
   content: url(../img/svg/checkbox-on.svg);
 }
@@ -1860,10 +1861,7 @@ input[type='email']:hover,
   position: relative;
   display: block;
   cursor: pointer;
-}
-
-.checkbox-list-item:last-child label {
-  padding-left: 4px;
+  padding-left: 35px;
 }
 
 .form-accept-btn {

@@ -8,7 +8,6 @@ var modalWindow = ( function () {
 	var modalOverlay = document.querySelector('.fixed-wrap');
 	var feedbackBtnClose = document.querySelector('.feedback-btn-close');
 
-
 	var _eventsListener = function () {
 		modalButton.addEventListener('click', _showModal, false);
 		modalOverlay.addEventListener('click', _closeModal, false);
@@ -22,7 +21,7 @@ var modalWindow = ( function () {
 
 	var _showModal = function (evt) {
 		evt.preventDefault();
-		modalOverlay.classList.add('_show'); 
+		modalOverlay.classList.add('_show');
 	}
 
 	var _closeModal = function (evt) {
