@@ -133,6 +133,7 @@ input[type='email']:hover,
   font-size: 16px;
   line-height: 18px;
   display: inline-block;
+  vertical-align: baseline;
   padding: 7px 14px;
   text-decoration: underline solid rgba(255, 255, 255, .3);
   border-bottom: none;
@@ -185,6 +186,7 @@ input[type='email']:hover,
 
 .dropdown-inner-link {
   display: inline-block;
+  vertical-align: baseline;
   width: 100%;
   padding: 7px 15px;
   text-decoration: none;
@@ -522,6 +524,7 @@ input[type='email']:hover,
   position: relative;
   left: -7px;
   display: inline-block;
+  vertical-align: baseline;
   padding: 10px;
   cursor: pointer;
   border: none;
@@ -557,6 +560,7 @@ input[type='email']:hover,
   top: 10px;
   left: 2px;
   display: inline-block;
+  vertical-align: baseline;
   width: 15px;
   height: 1px;
   content: '';
@@ -640,7 +644,7 @@ input[type='email']:hover,
 
 ._inner-page-contacts {
   position: absolute;
-  top: 49px;
+  top: 64px;
   right: 0;
 }
 
@@ -654,6 +658,7 @@ input[type='email']:hover,
   font-weight: bold;
   line-height: 24px;
   display: inline-block;
+  vertical-align: baseline;
   padding-top: 3px;
 }
 
@@ -718,11 +723,11 @@ input[type='email']:hover,
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 17px;
   height: 17px;
   margin-right: 8px;
   cursor: pointer;
-  vertical-align: top;
   border: 2px solid #fff;
   border-radius: 50%;
   background-color: transparent;
@@ -751,6 +756,7 @@ input[type='email']:hover,
 #product-2:checked~.main-content #lemon-slide,
 #product-3:checked~.main-content #strawberry-slide {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 #product-1:checked~.main-content label[for='product-1'],
@@ -789,10 +795,10 @@ input[type='email']:hover,
   font-weight: 600;
   line-height: 41px;
   display: inline-block;
+  vertical-align: top;
   padding: 12px 41px;
   cursor: pointer;
   text-align: center;
-  vertical-align: top;
   text-decoration: none;
   color: #fff;
   border: none;
@@ -1357,6 +1363,7 @@ input[type='email']:hover,
 
 .social-btn {
   display: inline-block;
+  vertical-align: baseline;
   width: 32px;
   height: 32px;
   border: 3px solid rgba(255, 255, 255, .3);
@@ -1443,6 +1450,7 @@ input[type='email']:hover,
   font-weight: bold;
   line-height: 28px;
   display: inline-block;
+  vertical-align: baseline;
   margin: 0;
   margin-bottom: 20px;
   text-align: left;
@@ -1452,6 +1460,7 @@ input[type='email']:hover,
   position: absolute;
   right: 15px;
   display: inline-block;
+  vertical-align: baseline;
   padding: 10px;
   cursor: pointer;
   border: none;
@@ -1464,6 +1473,7 @@ input[type='email']:hover,
   top: 9px;
   left: -3px;
   display: inline-block;
+  vertical-align: baseline;
   width: 25px;
   height: 2px;
   content: '';
@@ -2026,9 +2036,9 @@ input[type='email']:hover,
 
 .fixed-wrap__modal::after {
   display: inline-block;
+  vertical-align: middle;
   height: 100%;
   content: '';
-  vertical-align: middle;
 }
 
 .modal {
