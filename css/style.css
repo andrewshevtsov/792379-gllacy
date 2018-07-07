@@ -453,10 +453,6 @@ input[type='email']:hover,
   background-color: #fff;
 }
 
-.__not-empty-basket svg #basket {
-  fill: #000;
-}
-
 .goods-of-basket {
   font-size: 13px;
   line-height: 16px;
@@ -737,31 +733,31 @@ input[type='email']:hover,
   background-color: rgba(255, 255, 255, .3);
 }
 
-#pduct-1:checked~.main-content {
+.pduct-1:checked~.main-content {
   background-color: #849d8f;
   background-image: url(../img/jpeg/ice-big.png);
 }
 
-#product-2:checked~.main-content {
+.product-2:checked~.main-content {
   background-color: #8996a6;
   background-image: url(../img/jpeg/ice-big-2.png);
 }
 
-#product-3:checked~.main-content {
+.product-3:checked~.main-content {
   background-color: #9d8b84;
   background-image: url(../img/jpeg/ice-big-3.png);
 }
 
-#product-1:checked~.main-content #raspberry-slide,
-#product-2:checked~.main-content #lemon-slide,
-#product-3:checked~.main-content #strawberry-slide {
+.product-1:checked~.main-content .raspberry-slide,
+.product-2:checked~.main-content .lemon-slide,
+.product-3:checked~.main-content .strawberry-slide {
   display: inline-block;
   vertical-align: baseline;
 }
 
-#product-1:checked~.main-content label[for='product-1'],
-#product-2:checked~.main-content label[for='product-2'],
-#product-3:checked~.main-content label[for='product-3'] {
+.product-1:checked~.main-content label[for='product-1'],
+.product-2:checked~.main-content label[for='product-2'],
+.product-3:checked~.main-content label[for='product-3'] {
   background-color: #fff;
 }
 
@@ -1592,7 +1588,7 @@ input[type='email']:hover,
   color: #000;
 }
 
-.select-sort:hover+.select-arrow-down #icon-down {
+.select-sort:hover+.select-arrow-down .icon-down {
   cursor: pointer;
   fill: #000;
 }
