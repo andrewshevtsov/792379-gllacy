@@ -52,8 +52,8 @@
                 </a>
                 <form action="#" method="POST">
                   <label for="user-search" class="user-search-field">
-                  <span class="visually-hidden">Поиск</span>
-                  <input type="text" class="user-search-text common-inputs" id="user-search" name="user-search" placeholder="Что ищем?">
+                  	<span class="visually-hidden">Поиск</span>
+                  	<input type="text" class="user-search-text common-inputs" id="user-search" name="user-search" placeholder="Что ищем?">
                   </label>
                 </form>
               </li>
@@ -262,6 +262,8 @@
         </section>
         <footer class="main-footer">
           <div class="map-container-pin">
+          	<strong class="visually-hidden">Как нас найти</strong>
+          	<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9279b7030865ddf9fff3f22d66ff14d7b4657ec36805d5bad005449247263860&amp;source=constructor" width="1200" height="430" class="interactive-map"></iframe>
             <div class="address-container">
               <p class="address-normal">Адрес главного офиса и офлайн-магазина:</p>
               <p class="address-bold"><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
@@ -270,7 +272,6 @@
               <p class="address-normal time-interval">(с 10 до 20 ежедневно)</p>
               <a class="callback-btn btn-red-shadow" href="#">Форма обратной связи</a>
             </div>
-            <img src="img/jpeg/map.jpg" alt="Наш адрес" class="image-map" width="1200" height="430">
           </div>
           <div class="footer-bottom">
             <ul class="social-list">
@@ -331,7 +332,7 @@
             <div class="footer-copyright">
               <p class="footer-copyright-text">
                 <a class="go-to-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/svg/logo-htmlacademy-small.svg" alt="Логотип HTMLAcademy" width="120" height="39" class="footer-studio-logo">
+                	<img src="img/svg/logo-htmlacademy-small.svg" alt="Логотип HTMLAcademy" width="120" height="39" class="footer-studio-logo">
                 </a>
                 Сделано в <a class="footer-studio-label" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
               </p>
@@ -344,12 +345,12 @@
               <div class="move-container"></div>
               <form class="feedback-form">
                 <button class="feedback-btn-close" type="button">
-                <span class="visually-hidden">Закрыть модальное окно</span>
+                	<span class="visually-hidden">Закрыть модальное окно</span>
                 </button>
                 <p class="feedback-title">Мы обязательно вам ответим!</p>
-                <label for="feedback-name"></label>
+                <label for="feedback-name" class="visually-hidden">Поле имя</label>
                 <input class="feedback-name common-inputs" type="text" id="feedback-name" name="feedback-name" placeholder="Как Вас зовут?">
-                <label for="feedback-email"></label>
+                <label for="feedback-email" class="visually-hidden">Поле почта</label>
                 <input class="feedback-email common-inputs" type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
                 <textarea class="feedback-area" name="feedback-area" id="feedback-area" cols="45" rows="7" placeholder="Напишите что-нибудь..."></textarea>
                 <input class="btn-feedback-submit btn-red-shadow" type="submit" value="Отправить">

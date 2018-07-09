@@ -40,7 +40,7 @@ var modalWindow = ( function () {
 var modalButton = document.querySelector('.callback-btn');
 
 if (!modalButton) {
-	console.error("кнопки нет на странице")
+	console.error('кнопки нет на странице');
 } else {
 	modalWindow.init();
 }
