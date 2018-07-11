@@ -50,23 +50,23 @@ input[type='email'],
   border: 1px solid #b2b2b2;
   border-radius: 5px;
   background-color: #fff;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 ::-webkit-input-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 :-ms-input-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 ::-ms-input-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 ::placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 input[type='email']:-ms-input-placeholder {
@@ -93,7 +93,7 @@ input[type='email']:hover,
 .main-navigation-link,
 .catalog-navigation-link,
 .page-number {
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   color: #fff;
   border-bottom: 1px solid rgb(157, 177, 165);
@@ -177,8 +177,8 @@ input[type='email']:hover,
 .header-left-navigation-link:not(.__page-active):active {
   color: #000;
   background-color: #eaeaea;
-  box-shadow: inset 0 2px 2px 0 rgba(105, 105, 105, .9);
   -webkit-box-shadow: inset 0 2px 2px 0 rgba(105, 105, 105, .9);
+  box-shadow: inset 0 2px 2px 0 rgba(105, 105, 105, .9);
 }
 
 .header-left-navigation-item:hover .dropdown-inner {
@@ -232,7 +232,7 @@ input[type='email']:hover,
 }
 
 .inner-title {
-  font-weight: bold;
+  font-weight: 700;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d1d0ce), to(#d1d0ce));
   background-image: -webkit-linear-gradient(#d1d0ce, #d1d0ce);
   background-image: -o-linear-gradient(#d1d0ce, #d1d0ce);
@@ -281,7 +281,7 @@ input[type='email']:hover,
 }
 
 .header-right-navigation-link {
-  font-weight: bold;
+  font-weight: 700;
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
@@ -438,7 +438,7 @@ input[type='email']:hover,
 }
 
 .form-enter-btn {
-  font-weight: bold;
+  font-weight: 700;
   padding: 17px 25px;
   text-align: center;
   color: #fff;
@@ -629,7 +629,7 @@ input[type='email']:hover,
 
 .goods-total-sum {
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 18px;
   margin: 0;
   margin-bottom: 20px;
@@ -638,7 +638,7 @@ input[type='email']:hover,
 
 .goods-purchase-btn {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 24px;
   padding: 10px 15px;
   text-align: center;
@@ -657,8 +657,8 @@ input[type='email']:hover,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: auto;
   font-size: 14px;
   line-height: 16px;
@@ -682,7 +682,7 @@ input[type='email']:hover,
 
 .nav-working-tel {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 24px;
   display: inline-block;
   vertical-align: baseline;
@@ -819,7 +819,7 @@ input[type='email']:hover,
 
 .slide-btn-link {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 41px;
   display: inline-block;
   vertical-align: top;
@@ -846,7 +846,7 @@ input[type='email']:hover,
 
 .promo-third-title {
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 41px;
   margin: 0;
 }
@@ -861,7 +861,7 @@ input[type='email']:hover,
 
 .get-btn {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 24px;
   margin-left: auto;
   padding: 10px 22px;
@@ -870,7 +870,7 @@ input[type='email']:hover,
   color: #fff;
   border-radius: 25px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
   background-image: -webkit-linear-gradient(bottom, #e74a35, #f26843);
   background-image: -o-linear-gradient(bottom, #e74a35, #f26843);
@@ -880,13 +880,13 @@ input[type='email']:hover,
 .raspberries-get-btn {
   width: 165px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .chokolate-get-btn {
   max-width: 195px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .promo-list {
@@ -1025,7 +1025,7 @@ input[type='email']:hover,
 
 .catalog-item-sum {
   font-size: 45px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 54px;
   z-index: 5;
   margin: 0;
@@ -1045,7 +1045,7 @@ input[type='email']:hover,
 
 .catalog-fast-preview {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 24px;
   position: absolute;
   right: 32px;
@@ -1061,7 +1061,7 @@ input[type='email']:hover,
 
 .ice-weight {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 55px;
   position: relative;
   left: -12px;
@@ -1166,7 +1166,7 @@ input[type='email']:hover,
 }
 
 .rubric-title {
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 5px;
   margin-bottom: 5px;
   color: #323232;
@@ -1182,7 +1182,7 @@ input[type='email']:hover,
 
 .rubric-link {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
   color: #323232;
 }
@@ -1242,6 +1242,19 @@ input[type='email']:hover,
   padding-bottom: 30px;
 }
 
+.main-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 1145px;
+  height: 1px;
+  background-color: #d1d0ce;
+}
+
 .address-container {
   margin: -368px 28px 0 auto;
   display: -webkit-box;
@@ -1283,7 +1296,7 @@ input[type='email']:hover,
 
 .address-bold {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 24px;
   width: 225px;
   margin: 0;
@@ -1300,10 +1313,7 @@ input[type='email']:hover,
   margin-top: 23px;
   margin-bottom: 30px;
   margin-left: -1px;
-  padding-top: 10px;
-  padding-right: 27px;
-  padding-bottom: 10px;
-  padding-left: 27px;
+  padding: 10px 27px 10px 27px;
   text-align: right;
   text-decoration: none;
   color: #fff;
@@ -1356,7 +1366,7 @@ input[type='email']:hover,
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 195px;
   margin: 35px 0 0 0;
   padding: 0;
@@ -1437,7 +1447,7 @@ input[type='email']:hover,
 }
 
 .footer-link-heart {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .footer-link-heart::before {
@@ -1492,7 +1502,7 @@ input[type='email']:hover,
 
 .feedback-title {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 28px;
   display: inline-block;
   vertical-align: baseline;
@@ -1987,6 +1997,7 @@ input[type='email']:hover,
   display: flex;
   width: 220px;
   margin-left: auto;
+  margin-bottom: 34px;
   padding: 0;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2009,7 +2020,7 @@ input[type='email']:hover,
 }
 
 .page-number:hover {
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
   color: #000;
   background-color: rgba(255, 255, 255, .2);
@@ -2046,15 +2057,6 @@ input[type='email']:hover,
 .next-page:active,
 .previous-page:active {
   background-color: #fff;
-}
-
-.footer-line {
-  width: 1150px;
-  height: 1px;
-  margin-top: 32px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #d1d0ce;
 }
 
 .fixed-wrap {

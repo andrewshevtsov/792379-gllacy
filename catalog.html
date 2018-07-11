@@ -12,7 +12,8 @@
         <header class="main-header">
           <nav class="header-nav">
             <a href="index.html" class="main-page-link">
-            <img class="top-header-logo" src="img/svg/logo-big.svg" width="154" height="64" alt="Логотип интернет-магазина мороженного &laquo;Gllacy Shop&raquo;"></a>
+            	<img class="top-header-logo" src="img/svg/logo-big.svg" width="154" height="64" alt="Логотип интернет-магазина мороженного &laquo;Gllacy Shop&raquo;">
+            </a>
             <ul class="header-left-navigation-list _inner-left-nav-list">
               <li class="header-left-navigation-item">
                 <a class="header-left-navigation-link __page-active">Каталог</a>
@@ -48,7 +49,7 @@
                     <path class="lens" fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"></path>
                   </svg>
                 </a>
-                <form action="#" method="POST">
+                <form action="https://echo.htmlacademy.ru" method="POST">
                   <label for="user-search" class="user-search-field"><span class="visually-hidden">Поиск</span>
                   	<input type="text" class="user-search-text common-inputs" id="user-search" name="user-search" placeholder="Что ищем?">
                   </label>									
@@ -81,7 +82,8 @@
                           <a href="#" class="forgot-password">Забыли пароль?</a>
                           <a href="#" class="new-registration">Новая регистрация</a>
                         </p>
-                        <input type="submit" name="form-enter-btn" class="form-enter-btn btn-red-shadow" value="Войти">
+                        <label for="form-enter-btn" class="visually-hidden">Войти</label>
+                        <input type="submit" name="form-enter-btn" id="form-enter-btn" class="form-enter-btn btn-red-shadow" value="Войти">
                       </div>
                     </form>
                   </li>
@@ -151,7 +153,7 @@
         <h1 class="content-title">Сливочное мороженое</h1>
         <section class="catalog-filters">
           <p class="visually-hidden">Фильтр товаров</p>
-          <form class="filters-block" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filters-block" method="GET" action="https://echo.htmlacademy.ru">
             <div class="form-filters-top">
               <div class="select-wrap">
                 <span class="select-sort-title _sort-self-title">Сортировка:</span>
@@ -187,7 +189,7 @@
                   <ul class="radio-wrap-list">
                     <li class="radio-wrap-item">
                       <input class="fat-filter visually-hidden" type="radio" name="radio" id="fat_0">
-                      <label for="fat_0">0%</label>													
+                      <label for="fat_0">0%</label>
                     </li>
                     <li class="radio-wrap-item">
                       <input class="fat-filter visually-hidden" type="radio" name="radio" id="fat_10" checked>
@@ -464,7 +466,6 @@
             </a>
           </li>
         </ul>
-        <div class="footer-line"></div>
         <footer class="main-footer">
           <div class="footer-bottom">
             <ul class="social-list _social-inner">
@@ -525,7 +526,7 @@
             <div class="footer-copyright">
               <p class="footer-copyright-text">
                 <a class="go-to-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/svg/logo-htmlacademy-small.svg" alt="Логотип HTMLAcademy" width="120" height="39" class="footer-studio-logo">
+                	<img src="img/svg/logo-htmlacademy-small.svg" alt="Логотип HTMLAcademy" width="120" height="39" class="footer-studio-logo">
                 </a>
                 Сделано в <a class="footer-studio-label" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
               </p>
