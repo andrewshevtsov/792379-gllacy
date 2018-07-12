@@ -616,7 +616,7 @@ input[type='email']:hover,
 }
 
 .goods-summary-list::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 135px;
   left: 50%;
