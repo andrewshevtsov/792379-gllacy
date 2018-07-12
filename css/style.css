@@ -486,9 +486,6 @@ input[type='email']:hover,
   z-index: 1;
   top: 37px;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -497,7 +494,6 @@ input[type='email']:hover,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 540px;
-  padding: 0;
   padding: 25px 15px 5px 15px;
   list-style: none;
   color: #000;
@@ -521,14 +517,6 @@ input[type='email']:hover,
   list-style: inherit;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.basket-line {
-  position: absolute;
-  left: 0;
-  width: 500px;
-  height: 1px;
-  background-color: #cacac7;
 }
 
 .basket-goods-item {
@@ -625,6 +613,19 @@ input[type='email']:hover,
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+
+.goods-summary-list::before {
+  content: "";
+  position: absolute;
+  top: 135px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 500px;
+  height: 1px;
+  background-color: #cacac7;
 }
 
 .goods-total-sum {
@@ -1804,11 +1805,11 @@ input[type='email']:hover,
 
  .checkbox-list-item:nth-child(3) {
   padding-right: 21px;
-} 
+}
 
  .checkbox-list-item:nth-child(4) {
   padding-right: 21px;
-} 
+}
 
 .extends+label::before {
   content: '';
